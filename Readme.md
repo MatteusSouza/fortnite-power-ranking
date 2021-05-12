@@ -9,7 +9,11 @@ git clone https://github.com/MatteusSouza/fortnite-power-ranking.git
 
 ```
 
-## instal requirement:
+[I highly recommend that you create a virtual environment before installing the requirements.](#How-to-create-a-virtualization-environment)
+
+<br>
+
+## Install requirement:
 
 ```shell
 pip3 install -r requirements.txt
@@ -78,3 +82,65 @@ If you prefer, you can use original function `to_json()` directly from pandas.
 pr.to_json('filename.json', orient='index', indent=2, force_ascii=False)
 ```
 [Read how to use the pandas to_json () function.](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html)
+
+## How to create a virtualization environment
+
+### Windows:
+
+<br>
+
+### Install the virtualenv:
+
+```shell
+python -m pip install --upgrade pip
+pip install virtualenv
+
+```
+
+### Create the virtualenv:
+
+```shell
+virtualenv venv
+
+```
+
+<br>
+
+### Activate the virtualenv:
+
+```shell
+.\nome_da_virtualenv\Scripts\activate
+
+```
+
+[How to fix error: ps1 cannot be loaded because running scripts is disabled on this system](https://gist.github.com/MatteusSouza/3dc8812552e0727a717c370bda09b736)
+
+
+<br>
+
+### Ubunto:
+
+<br>
+
+### Install the virtualenv:
+
+```bash
+sudo apt install -y python3-venv
+
+```
+
+### Create the virtualenv:
+
+```bash
+python3 -m venv venv
+
+```
+
+<br>
+
+### Activate the virtualenv:
+
+```bash
+source venv/bin/activate
+
+```
